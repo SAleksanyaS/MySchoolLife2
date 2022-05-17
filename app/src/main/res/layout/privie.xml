@@ -15,11 +15,11 @@
         android:gravity="center"
         android:padding="20dp">
         <TextView
+            android:id="@+id/btn_close_privie"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/btclose"
             android:text="X"
-            android:background="@drawable/style_button_white"
+            android:background="@drawable/button_press_white_r50_azur"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_gravity="end"
@@ -29,34 +29,32 @@
         <ImageView
             android:id="@+id/privieimg"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="30"
+            android:layout_height="251dp"
             android:src="@drawable/privie_texxxt" />
 
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/privie_text"
             android:layout_height="0dp"
             android:text="@string/privietext"
             android:textColor="@color/black"
             android:layout_weight="30"
             android:gravity="center"
             android:textSize="18sp"
-            android:id="@+id/privietext"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:background="@drawable/style_button_gray"
-            android:layout_weight="10"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:text="@string/char_creation_next"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:id="@+id/btnnext"
             />
 
+        <Button
+            android:id="@+id/btn_next_privie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_press_white_r50_azur"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/char_creation_next"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
 
     </LinearLayout>

@@ -2,23 +2,31 @@
     <string name="app_name">MySchoolLife</string>
     <string name="startovoe_no_act">Начать \n Новую игру</string>
     <string name="startovoe_memory">Воспоминания</string>
-    <string name="startovoe_next">Продолжить</string>
 
+
+    <string name="next">Продолжить</string>
+    <string name="back">Назад</string>
 
 
     <string name="privietext">MySchoolLife \n Это игра про лучшие годы вашей жизни. \n Попробуйте снова почуствовать себя счастливым, играя в эту игру.\n В ходе игры:\n Можно проводить диалоги с персонажами.\n Улучшать свои навыки и способности.\nВыполнять просьбы.\n И многое другое, всё как в реальной жизни.</string>
-    <string name="day1_son">Поспать ещё</string>
-    <string name="day1_up">Встать с кровати</string>
-    <string name="testgo">Начать Тест</string>
-    <string name="gonextday">Следущий день</string>
+    <string name="hold">Эта часть истории \nскоро будет открыта.</string>
     <string name="Hold_back">Вернуться</string>
-    <string name="Result">Ответ:</string>
-    <string name="Hold">Эта часть истории \nскоро будет открыта.</string>
-    <string name="no_input">Введите данные</string>
-    <string name="test_1">Закончить тест</string>
-    <string name="name">Имя:</string>
-    <string name="family">Фамилия:</string>
-    <string name="char_creation_back">Назад</string>
+    <string name="next_day">Следущий день</string>
+
+
+    <string name="day_1_sleep">Поспать ещё</string>
+    <string name="day_1_awake">Встать с кровати</string>
+
+
+    <string name="test_start">Начать Тест</string>
+    <string name="test_variant">Вариант:</string>
+    <string name="test_result">Ответ:</string>
+    <string name="pls_input">Введите данные</string>
+    <string name="test_end">Закончить тест</string>
+
+
+    <string name="char_name">Имя:</string>
+    <string name="char_family">Фамилия:</string>
     <string name="char_creation">Создание персонажа</string>
     <string name="char_creation_gender">Выберите пол</string>
     <string name="char_creation_gender_Woman">Ж</string>

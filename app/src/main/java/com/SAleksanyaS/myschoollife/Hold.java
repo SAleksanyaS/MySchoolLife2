@@ -16,6 +16,8 @@ public class Hold extends AppCompatActivity {
         setContentView(R.layout.hold);
 
 
+
+// Кнопка "вернуться" (Начало)
         Button hold_back = (Button) findViewById(R.id.hold_back);
         hold_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,14 +31,14 @@ public class Hold extends AppCompatActivity {
                 }
             }
         });
+// Кнопка "вернуться" (Конец)
+
     }
 
 
 
 
-
-
-    // Системная Кнопка "Назад" (Начало)
+// Системная Кнопка "Назад" (Начало)
     @Override
     public void onBackPressed(){
         try {
@@ -46,5 +48,6 @@ public class Hold extends AppCompatActivity {
         } catch (Exception e) {
         }
     }
-    // Системная Кнопка "Назад" (Конец)
+// Системная Кнопка "Назад" (Конец)
+
 }

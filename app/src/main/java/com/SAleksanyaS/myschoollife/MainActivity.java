@@ -20,8 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Кнопка "Начать игру" (Начало)
-        Button buttonStartovoe = (Button)findViewById(R.id.buttonStartovoe);
+
+// Кнопка "Начать игру" (Начало)
+        Button buttonStartovoe = (Button)findViewById(R.id.button_new_game);
         buttonStartovoe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,10 +33,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка "Начать" (Конец)
+// Кнопка "Начать" (Конец)
 
 
-        // Кнопка "Воспоминания" (Начало)
+
+// Кнопка "Воспоминания" (Начало)
         Button button_memory = (Button)findViewById(R.id.button_memory);
         button_memory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,11 +50,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка "Воспоминания" (Конец)
+// Кнопка "Воспоминания" (Конец)
 
 
-        // Кнопка "Продолжить игру" (Начало)
-        Button button_next = (Button)findViewById(R.id.button_next);
+
+// Кнопка "Продолжить игру" (Начало)
+        Button button_next = (Button)findViewById(R.id.button_next_char);
         button_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,14 +67,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка "Продолжить игру" (Конец)
-
+// Кнопка "Продолжить игру" (Конец)
 
     }
 
 
 
-    // Системная Кнопка "Назад" (Начало)
+// Системная Кнопка "Назад" (Начало)
     @Override
     public void onBackPressed(){
 
@@ -85,6 +87,6 @@ public class MainActivity extends AppCompatActivity {
         }
         backPressedTime = System.currentTimeMillis();
     }
-    // Системная Кнопка "Назад"  (Конец)
+// Системная Кнопка "Назад"  (Конец)
 
 }

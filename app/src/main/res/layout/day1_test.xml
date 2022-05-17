@@ -25,6 +25,28 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
+                <TextView
+                    android:id="@+id/test_char_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/char_name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/test_char_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/char_family"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/test_variant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/test_variant" />
+
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="match_parent"
@@ -41,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/Result"/>
+                        android:text="@string/test_result"/>
 
                     <EditText
                         android:id="@+id/input_task1"
@@ -70,7 +92,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/Result" />
+                        android:text="@string/test_result" />
 
                     <EditText
                         android:id="@+id/input_task2"
@@ -99,7 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/Result" />
+                        android:text="@string/test_result" />
 
                     <EditText
                         android:id="@+id/input_task3"
@@ -128,7 +150,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/Result" />
+                        android:text="@string/test_result" />
 
                     <EditText
                         android:id="@+id/input_task4"
@@ -157,7 +179,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/Result" />
+                        android:text="@string/test_result" />
 
                     <EditText
                         android:id="@+id/input_task5"
@@ -186,7 +208,7 @@
                         android:id="@+id/textView15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Result"
+                        android:text="@string/test_result"
                         android:textColor="@color/black" />
 
                     <EditText
@@ -201,12 +223,12 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/testend"
+                    android:id="@+id/test_end"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/style_button_press_azure"
-                    android:text="@string/test_1" />
+                    android:background="@drawable/style_button_azure_r50"
+                    android:text="@string/test_end" />
 
             </LinearLayout>
         </ScrollView>
