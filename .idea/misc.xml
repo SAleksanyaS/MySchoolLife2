@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/character_creation.xml" value="0.16" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/day1_test.xml" value="0.1" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/days.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/hold.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/privie.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/universal.xml" value="0.2" />
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MySchoolLife/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35" />
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_blue.xml" value="0.2955" />
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_green.xml" value="0.2955" />

@@ -13,15 +13,72 @@
         android:scaleType="centerCrop"
         android:src="@drawable/beliy_fon" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+    <ImageView
+        android:id="@+id/kartinka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="174dp"
+        android:src="@drawable/day1_scr1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/day1_son"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="180dp"
+        android:text="@string/day1_son"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/day1_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="179dp"
+        android:text="@string/day1_up"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/go_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/testgo"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/day1_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="102dp"
+        android:text="@string/startovoe_next"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btngo_day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="77dp"
+        android:text="@string/gonextday"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

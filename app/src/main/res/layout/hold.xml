@@ -19,9 +19,9 @@
         android:layout_height="99dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="13dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="119dp"
         android:paddingLeft="20dp"
-        android:layout_marginBottom="175dp"
         android:text="@string/Hold"
         android:textColor="@color/black"
         android:textSize="30sp" />
@@ -32,8 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="55dp"
         android:background="@drawable/style_button_white"
         android:text="@string/Hold_back"
         android:textColor="@color/black" />
