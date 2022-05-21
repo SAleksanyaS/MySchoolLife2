@@ -19,7 +19,7 @@
 
 
     <string name="test_start">Начать Тест</string>
-    <string name="test_variant">Вариант:</string>
+    <string name="test_variant">Вариант: 1</string>
     <string name="test_result">Ответ:</string>
     <string name="pls_input">Введите данные</string>
     <string name="test_end">Закончить тест</string>

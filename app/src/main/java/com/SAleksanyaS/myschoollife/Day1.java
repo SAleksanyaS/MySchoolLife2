@@ -29,6 +29,8 @@ public class Day1 extends AppCompatActivity {
 
 
 
+        String txtname = getIntent().getStringExtra("char_name");
+        String txtfamily = getIntent().getStringExtra("char_family");
 // принимаем имя и фамилию из CharacterCreation
 
 //
@@ -140,11 +142,9 @@ public class Day1 extends AppCompatActivity {
                     go_nextday.setVisibility(View.VISIBLE);
 
 
-                    char_name = (TextView) findViewById(R.id.test_char_name);
-                    char_family = (TextView) findViewById(R.id.test_char_family);
-                    String txtname = getIntent().getStringExtra("char_name");
-                    String txtfamily = getIntent().getStringExtra("char_family");
 
+                    TextView char_name = (TextView) dialog_test.findViewById(R.id.test_char_name);
+                    TextView char_family = (TextView) dialog_test.findViewById(R.id.test_char_family);
                     char_name.setText(char_name.getText().toString() + " " + txtname);
                     char_family.setText(char_family.getText().toString() + " " + txtfamily);
 
