@@ -29,6 +29,7 @@
     <string name="char_family">Фамилия:</string>
     <string name="char_creation">Создание персонажа</string>
     <string name="char_creation_gender">Выберите пол</string>
+    <string name="char_creation_gender_explanation">Нажмёте 1 раз, пол = Ж\n Нажмёте 2 раза, пол = М</string>
     <string name="char_creation_gender_Woman">Ж</string>
     <string name="char_creation_gender_Man">М</string>
     <string name="char_creation_name_text">Придумайте имя и фамилию для вашего персонажа</string>

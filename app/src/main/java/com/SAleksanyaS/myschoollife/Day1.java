@@ -172,10 +172,13 @@ public class Day1 extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(Day1.this, Hold.class);
                     startActivity(intent);finish();
+
                 }catch (Exception e){
                 }
             }
         });
+
+
 
     }
 

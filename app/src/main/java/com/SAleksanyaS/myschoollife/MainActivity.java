@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime;
     private  Toast backToast;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button_memory = (Button)findViewById(R.id.button_memory);
+        Button button_current_day = (Button)findViewById(R.id.button_current_day);
 
 
 // Кнопка "Начать игру" (Начало)
@@ -38,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 // Кнопка "Воспоминания" (Начало)
-        Button button_memory = (Button)findViewById(R.id.button_memory);
         button_memory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 // Кнопка "Продолжить игру" (Начало)
-        Button button_next = (Button)findViewById(R.id.button_next_char);
-        button_next.setOnClickListener(new View.OnClickListener() {
+        button_current_day.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
