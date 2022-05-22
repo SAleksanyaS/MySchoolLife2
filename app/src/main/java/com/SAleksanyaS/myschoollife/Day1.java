@@ -3,7 +3,9 @@ package com.SAleksanyaS.myschoollife;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -19,8 +21,7 @@ public class Day1 extends AppCompatActivity {
     Dialog dialog;
     Dialog dialog_test;
 
-    private TextView char_name;
-    private TextView char_family;
+    private TextView char_name, char_family;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +30,11 @@ public class Day1 extends AppCompatActivity {
 
 
 
-        String txtname = getIntent().getStringExtra("char_name");
-        String txtfamily = getIntent().getStringExtra("char_family");
+//
+        //String txtname = getIntent().getStringExtra("char_name");
+       // String txtfamily = getIntent().getStringExtra("char_family");
 // принимаем имя и фамилию из CharacterCreation
 
-//
 
 
 
@@ -85,6 +86,7 @@ public class Day1 extends AppCompatActivity {
         Button go_test =(Button) findViewById(R.id.test_start);
         Button go_nextday =(Button) findViewById(R.id.btngo_day2);
 
+
         day1_son.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -99,6 +101,8 @@ public class Day1 extends AppCompatActivity {
             }
         });
 
+
+
         day1_up.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -112,6 +116,8 @@ public class Day1 extends AppCompatActivity {
             }
         });
 
+
+
         day1_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -123,6 +129,7 @@ public class Day1 extends AppCompatActivity {
                 }
             }
         });
+
 
 
         go_test.setOnClickListener(new View.OnClickListener(){
@@ -145,6 +152,11 @@ public class Day1 extends AppCompatActivity {
 
                     TextView char_name = (TextView) dialog_test.findViewById(R.id.test_char_name);
                     TextView char_family = (TextView) dialog_test.findViewById(R.id.test_char_family);
+
+                    SharedPreferences sp = getApplicationContext().getSharedPreferences("MyCharPrefs", Context.MODE_PRIVATE);
+                    String txtname = sp.getString("charname", "");
+                    String txtfamily = sp.getString("charfamily", "");
+
                     char_name.setText(char_name.getText().toString() + " " + txtname);
                     char_family.setText(char_family.getText().toString() + " " + txtfamily);
 
@@ -166,6 +178,8 @@ public class Day1 extends AppCompatActivity {
             }
         });
 
+
+
         go_nextday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -177,9 +191,7 @@ public class Day1 extends AppCompatActivity {
                 }
             }
         });
-
-
-
+        
     }
 
 

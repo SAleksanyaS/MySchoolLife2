@@ -7,8 +7,11 @@
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/button_press_white.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/button_press_white_azur.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_blue.xml" value="0.1865" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_gray_green.xml" value="0.1865" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_gray_red.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_green.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_button_press_red.xml" value="0.1865" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/create_toglebutton_press_blue_red.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/levelsbutton.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/startovoe_button_press_white.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/style_button_azure.xml" value="0.1865" />
@@ -21,10 +24,10 @@
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/style_create_button_red.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/drawable/style_gray.xml" value="0.1865" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/character_creation.xml" value="0.25" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/character_creation.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/day1.xml" value="0.25" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/day1_test.xml" value="0.264" />
-        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/days.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/days.xml" value="0.11168032786885246" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/hold.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/privie.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/Aleksanya/StudioProjects/MySchoolLife/app/src/main/res/layout/universal.xml" value="0.264" />
