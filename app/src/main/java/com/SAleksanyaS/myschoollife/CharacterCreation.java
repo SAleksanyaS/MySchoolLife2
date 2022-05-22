@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -19,8 +18,8 @@ public class CharacterCreation extends AppCompatActivity {
     private EditText char_name;
     private EditText char_family;
     private Button button_next;
+    private String nameStr, familyStr, gender;
     SharedPreferences sp;
-    String nameStr, familyStr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +43,6 @@ public class CharacterCreation extends AppCompatActivity {
                     button_gender.setBackgroundResource(R.drawable.style_button_red);
 
 
-
 // Кнопка "Продолжить"  Девушка (Начало)
                     button_next.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -57,9 +55,11 @@ public class CharacterCreation extends AppCompatActivity {
 
                                     nameStr = char_name.getText().toString();
                                     familyStr = char_family.getText().toString();
+                                    gender = "w";
                                     SharedPreferences.Editor editor = sp.edit();
                                     editor.putString("charname",nameStr);
                                     editor.putString("charfamily",familyStr);
+                                    editor.putString("gender", gender);
                                     editor.commit();
                                     Toast.makeText(CharacterCreation.this, "Information Saved.", Toast.LENGTH_LONG).show();
 
@@ -80,7 +80,6 @@ public class CharacterCreation extends AppCompatActivity {
                     button_gender.setBackgroundResource(R.drawable.style_button_blue);
 
 
-
 // Кнопка "Продолжить" Парень (Начало)
                     button_next.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -90,15 +89,18 @@ public class CharacterCreation extends AppCompatActivity {
                                     Toast.makeText(CharacterCreation.this, R.string.pls_input, Toast.LENGTH_LONG).show();
                                 }
                                 else {
+
                                     nameStr = char_name.getText().toString();
                                     familyStr = char_family.getText().toString();
+                                    gender = "m";
                                     SharedPreferences.Editor editor = sp.edit();
                                     editor.putString("charname",nameStr);
                                     editor.putString("charfamily",familyStr);
+                                    editor.putString("gender", gender);
                                     editor.commit();
                                     Toast.makeText(CharacterCreation.this, "Information Saved.", Toast.LENGTH_SHORT).show();
 
-                                    Intent intent = new Intent(CharacterCreation.this, Day1.class);
+                                    Intent intent = new Intent(CharacterCreation.this, Day1_man.class);
                                     //intent.putExtra("char_name", char_name.getText().toString());
                                     //intent.putExtra("char_family", char_family.getText().toString());
                                     startActivity(intent);

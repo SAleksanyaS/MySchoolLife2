@@ -1,41 +1,41 @@
 <resources>
     <string name="app_name">MySchoolLife</string>
-    <string name="startovoe_no_act">Начать \n Новую игру</string>
-    <string name="startovoe_memory">Воспоминания</string>
+    <string name="startovoe_no_act">Start \n a new game</string>
+    <string name="startovoe_memory">Memories</string>
 
 
-    <string name="next">Продолжить</string>
-    <string name="back">Назад</string>
+    <string name="next">Continue</string>
+    <string name="back">Back</string>
+
+    <string name="privie_days"> The color designation of the level icon: \n green - the level is passed \n gray - the level will soon be ready to pass \n white - the level can be passed</string>
+    <string name="privietext">MySchoolLife\n is a game about the best years of your life. \n Try to feel happy again by playing this game.\n During the game:\n It is possible to conduct dialogues with characters.\n Improve your skills and abilities.\To fulfill requests.\n And much more, everything is like in real life.</string>
+    <string name="hold">This part of the story\nwill be revealed soon.</string>
+    <string name="Hold_back">To return</string>
+    <string name="next_day">The next day</string>
 
 
-    <string name="privietext">MySchoolLife \n Это игра про лучшие годы вашей жизни. \n Попробуйте снова почуствовать себя счастливым, играя в эту игру.\n В ходе игры:\n Можно проводить диалоги с персонажами.\n Улучшать свои навыки и способности.\nВыполнять просьбы.\n И многое другое, всё как в реальной жизни.</string>
-    <string name="hold">Эта часть истории \nскоро будет открыта.</string>
-    <string name="Hold_back">Вернуться</string>
-    <string name="next_day">Следущий день</string>
+    <string name="day_1_sleep">Get some more sleep</string>
+    <string name="day_1_awake">Get out of bed</string>
 
 
-    <string name="day_1_sleep">Поспать ещё</string>
-    <string name="day_1_awake">Встать с кровати</string>
+    <string name="test_start">Start the Test</string>
+    <string name="test_variant">Variant: 1</string>
+    <string name="test_result">Answer:</string>
+    <string name="pls_input">Enter the data</string>
+    <string name="test_end">Finish the test</string>
 
+    <string name="day2_teacher_1_1">Так,</string>
+    <string name="day2_teacher_1_2">, ваша очередь.</string>
 
-    <string name="test_start">Начать Тест</string>
-    <string name="test_variant">Вариант: 1</string>
-    <string name="test_result">Ответ:</string>
-    <string name="pls_input">Введите данные</string>
-    <string name="test_end">Закончить тест</string>
-
-
-    <string name="char_name">Имя:</string>
-    <string name="char_family">Фамилия:</string>
-    <string name="char_creation">Создание персонажа</string>
-    <string name="char_creation_gender">Выберите пол</string>
-    <string name="char_creation_gender_explanation">Нажмёте 1 раз, пол = Ж\n Нажмёте 2 раза, пол = М</string>
-    <string name="char_creation_gender_Woman">Ж</string>
-    <string name="char_creation_gender_Man">М</string>
-    <string name="char_creation_name_text">Придумайте имя и фамилию для вашего персонажа</string>
-    <string name="char_creation_name">Введите имя</string>
-    <string name="char_creation_family">Введите фамилию</string>
-    <string name="char_creation_next">Продолжить</string>
+    <string name="char_name">Name:</string>
+    <string name="char_family">Surname:</string>
+    <string name="char_creation">Character Creation</string>
+    <string name="char_creation_gender">Choose a gender</string>
+    <string name="char_creation_gender_Woman">W</string>
+    <string name="char_creation_gender_Man">M</string>
+    <string name="char_creation_name_text">Come up with a name and surname for your character</string>
+    <string name="char_creation_name">Enter a name</string>
+    <string name="char_creation_family">Enter surname</string>
 
 
 </resources>

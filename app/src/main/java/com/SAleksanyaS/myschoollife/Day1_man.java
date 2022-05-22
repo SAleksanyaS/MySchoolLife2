@@ -11,22 +11,22 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Day1 extends AppCompatActivity {
+public class Day1_man extends AppCompatActivity {
 
     Dialog dialog;
     Dialog dialog_test;
-
+    SharedPreferences sp;
     private TextView char_name, char_family;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.day1);
+        setContentView(R.layout.day1_man);
 
 
 
@@ -54,7 +54,7 @@ public class Day1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Day1.this, DaysAndParts.class);
+                    Intent intent = new Intent(Day1_man.this, Days.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
                 }
@@ -136,7 +136,7 @@ public class Day1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    dialog_test = new Dialog(Day1.this);
+                    dialog_test = new Dialog(Day1_man.this);
                     dialog_test.requestWindowFeature(Window.FEATURE_NO_TITLE);     // скрыть заголовок кода
                     dialog_test.setContentView(R.layout.day1_test);   // путь к диалоговому окну
                     dialog_test.getWindow().setBackgroundDrawable(new ColorDrawable((Color.TRANSPARENT))); // прозрачный фон
@@ -150,13 +150,12 @@ public class Day1 extends AppCompatActivity {
 
 
 
-                    TextView char_name = (TextView) dialog_test.findViewById(R.id.test_char_name);
-                    TextView char_family = (TextView) dialog_test.findViewById(R.id.test_char_family);
+                    char_name = (TextView) dialog_test.findViewById(R.id.test_char_name);
+                    char_family = (TextView) dialog_test.findViewById(R.id.test_char_family);
 
                     SharedPreferences sp = getApplicationContext().getSharedPreferences("MyCharPrefs", Context.MODE_PRIVATE);
                     String txtname = sp.getString("charname", "");
                     String txtfamily = sp.getString("charfamily", "");
-
                     char_name.setText(char_name.getText().toString() + " " + txtname);
                     char_family.setText(char_family.getText().toString() + " " + txtfamily);
 
@@ -184,14 +183,26 @@ public class Day1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Day1.this, Hold.class);
+
+                    sp = getSharedPreferences("MyCharPrefs", Context.MODE_PRIVATE);
+                    final int night = sp.getInt("Night", 0);
+                    if(night > 2){}
+                    else{
+                        SharedPreferences.Editor editor = sp.edit();
+                        editor.putInt("Night",1);
+                        editor.commit();
+                    }
+
+
+                    Intent intent = new Intent(Day1_man.this, Day2_man.class);
                     startActivity(intent);finish();
 
                 }catch (Exception e){
                 }
             }
         });
-        
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
 
@@ -200,7 +211,7 @@ public class Day1 extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         try {
-            Intent intent = new Intent(Day1.this, DaysAndParts.class);   //переход с одной активити к дпугой
+            Intent intent = new Intent(Day1_man.this, Days.class);   //переход с одной активити к дпугой
             startActivity(intent);finish();
 
         } catch (Exception ignored) {

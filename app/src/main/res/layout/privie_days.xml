@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/privie_text"
             android:layout_height="0dp"
-            android:text="@string/privietext"
+            android:text="@string/privie_days"
             android:textColor="@color/black"
             android:layout_weight="30"
             android:gravity="center"

@@ -10,14 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".Hold"
+            android:name=".Day1_woman"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Day1"
+            android:name=".Day2_man"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Hold"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Day1_man"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DaysAndParts"
+            android:name=".Days"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class Hold extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class Hold extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                        Intent intent = new Intent(Hold.this, MainActivity.class);
+                        Intent intent = new Intent(Hold.this, Days.class);
                         startActivity(intent);
                         finish();
 
@@ -42,7 +41,7 @@ public class Hold extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         try {
-            Intent intent = new Intent(Hold.this, DaysAndParts.class);
+            Intent intent = new Intent(Hold.this, Days.class);
             startActivity(intent);finish();
 
         } catch (Exception e) {

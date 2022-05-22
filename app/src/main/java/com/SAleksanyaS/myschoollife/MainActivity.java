@@ -1,10 +1,11 @@
 package com.SAleksanyaS.myschoollife;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         Button button_memory = (Button)findViewById(R.id.button_memory);
         Button button_current_day = (Button)findViewById(R.id.button_current_day);
 
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("MyCharPrefs", Context.MODE_PRIVATE);
+        String txtgender = sp.getString("gender", "");
 
 // Кнопка "Начать игру" (Начало)
         Button buttonStartovoe = (Button)findViewById(R.id.button_new_game);
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
+                    sp.edit().clear().commit();
                     Intent intent = new Intent(MainActivity.this, CharacterCreation.class);
                     startActivity(intent);finish();
                 } catch (Exception e) {
@@ -40,13 +44,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
 // Кнопка "Воспоминания" (Начало)
         button_memory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(MainActivity.this, DaysAndParts.class);
-                    startActivity(intent);finish();
+                    if(txtgender.equals("m") | txtgender.equals("w")) {
+                        Intent intent = new Intent(MainActivity.this, Days.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                    else {
+                        Toast.makeText(MainActivity.this, "Начните новую игру", Toast.LENGTH_SHORT).show();
+                    }
 
                 } catch (Exception e) {
                 }
@@ -61,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(MainActivity.this, DaysAndParts.class); //////////////////  перенос на дейст уровень
+                    Intent intent = new Intent(MainActivity.this, Days.class); //////////////////  перенос на дейст уровень
                     startActivity(intent);finish();
 
                 } catch (Exception e) {

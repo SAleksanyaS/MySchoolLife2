@@ -79,6 +79,7 @@
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,10 +89,10 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:text="@string/char_name"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
+                    android:text="@string/char_name"
                     android:textColor="@color/black" />
 
                 <EditText
@@ -107,7 +108,6 @@
                     android:textColor="@color/black" />
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,14 +118,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/char_family" />
 
                 <EditText
                     android:id="@+id/char_family"
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/style_gray"
                     android:ems="10"
                     android:inputType="textPersonName"
