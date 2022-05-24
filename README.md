@@ -1,6 +1,11 @@
 "# _MySchoolLife_" 
 
-https://user-images.githubusercontent.com/105164012/168800162-fac74ca1-2789-46ca-8011-4faaeb6abf4d.mp4
-[Sasung_predzachita.pptx](https://github.com/SAleksanyaS/MySchoolLife/files/8707958/Sasung_predzachita.pptx)
+
+
+
+https://user-images.githubusercontent.com/105164012/170039228-9149e338-2950-4218-8eff-55631f9ead93.mp4
+
+
+[sasung_itogovoe.pptx](https://github.com/SAleksanyaS/MySchoolLife2/files/8762769/sasung_itogovoe.pptx)
 
 "# MySchoolLife" 
